@@ -2,17 +2,17 @@ package com.codegym;
 
 public class Rectangle extends Shape{
     private double width =1;
-    private double heigh =1;
+    private double height =1;
     Rectangle(){
     }
-    Rectangle(double width, double heigh){
+    Rectangle(double width, double height){
         this.width=width;
-        this.heigh=heigh;
+        this.height =height;
     }
     Rectangle(double w, double h, String color, boolean filled){
         super(color,filled);
         width=w;
-        heigh=h;
+        height =h;
     }
 
     public double getWidth() {
@@ -23,20 +23,20 @@ public class Rectangle extends Shape{
         this.width = width;
     }
 
-    public double getHeigh() {
-        return heigh;
+    public double getHeight() {
+        return height;
     }
 
-    void setHeigh(double heigh) {
-        this.heigh = heigh;
+    void setHeight(double height) {
+        this.height = height;
     }
     double getPermetric(){
-        return (width+heigh)*2;
+        return (width+ height)*2;
     }
     double getArea(){
-        return width*heigh;
+        return width* height;
     }
    public String toString(){
-        return "A Rectangle with width= "+ width+ " and heigh= "+heigh+ " which is a subclass of "+ super.toString();
+        return "A Rectangle with width= "+ width+ " and height= "+ height + " which is a subclass of "+ super.toString();
     }
 }

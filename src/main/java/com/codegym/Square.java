@@ -4,7 +4,7 @@ public class Square extends Rectangle {
     private double side=1.0;
     Square(){
         super.setWidth(side);
-        super.setHeigh(side);
+        super.setHeight(side);
     }
     Square(double side){
         super(side,side);

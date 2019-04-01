@@ -19,7 +19,7 @@ public class Rectangle extends Shape{
         return width;
     }
 
-    public void setWidth(double width) {
+    void setWidth(double width) {
         this.width = width;
     }
 
@@ -27,7 +27,7 @@ public class Rectangle extends Shape{
         return heigh;
     }
 
-    public void setHeigh(double heigh) {
+    void setHeigh(double heigh) {
         this.heigh = heigh;
     }
     double getPermetric(){
